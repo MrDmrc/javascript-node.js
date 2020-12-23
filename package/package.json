@@ -1,0 +1,19 @@
+{
+  "name": "beytonun-paketi",
+  "version": "1.0.0",
+  "description": "bu bir açıklama",
+  "main": "index.js",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "nodemailer": "^6.4.11",
+    "slugify": "^1.4.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "beytullah demirci",
+  "license": "ISC"
+}

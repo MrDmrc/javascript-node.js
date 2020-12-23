@@ -1,0 +1,2 @@
+belirli bir versiyonu kurmak için 
+npm install nodemailer@3.2  (modulun adı @ versiyonu)

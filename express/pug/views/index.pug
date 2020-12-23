@@ -1,0 +1,48 @@
+html
+    head
+        title merhaba pug
+
+    body       
+        //açıklama satırı
+        //div(id="başlık") burası başlık alanı
+
+        - var okul = 'istanbul ticaret üniversitesi'
+        - var sehir = 'istanbul'
+
+        =okul
+        br
+        | bulunduğu şehir #{ sehir.toUpperCase() }
+        
+        hr
+
+        - var sayi = 12;
+
+        if !sayi
+            | Sayi değişkeni yok.
+        else if sayi==12
+            | Sayi 12
+        else    
+            | Sayı 12 değil    
+
+        hr
+
+        =job 
+        br   
+        span(style="color: white; background-color:black") 
+            | Merhaba #{name} 
+
+        br
+        include footer
+        br
+        include other
+        
+        hr
+
+        ul
+            each val in ['1 kere', 2, 3, 4, 5]
+                li=val
+
+        hr
+        ul  
+            each val, index in ['zero','one','two']
+                li=index +': ' + val
